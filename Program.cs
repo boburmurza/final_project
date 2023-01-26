@@ -28,11 +28,11 @@ int SortingArray(string[] array)
     return count;
 }
 string[] NewArray(int count, string[] array)
-{
+{// создаем новый массив прогоняем через цикл
     string[] arr = new string[count];
     for (int i = 0, j = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3)
+        if (array[i].Length <= 3)  // с помощью условия проверяем  размер элемента массива
         {
             arr[j] = array[i];
             j++;
