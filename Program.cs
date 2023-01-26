@@ -14,13 +14,14 @@ string[] CreateArray(int n)
 
 
 int SortingArray(string[] array)
-{
+{   //с помощью счетчика узнаем размер нового массива
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
+    // пpовереям размер элементов
         if (array[i].Length <= 3)
         {
-            count++;
+            count++;//присваем еденицу каждый раз когда условия истина
         }
     }
     
