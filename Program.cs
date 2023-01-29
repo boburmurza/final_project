@@ -1,6 +1,4 @@
-﻿//
-// создаем метод для заполнения массива с клавиатуры 
-
+﻿// создаем метод для заполнения массива с клавиатуры 
 string[] CreateArray(int n)
 {
     string[] array = new string[n];
@@ -11,8 +9,6 @@ string[] CreateArray(int n)
     }
     return array;
 }
-
-
 int SortingArray(string[] array)
 {   //с помощью счетчика узнаем размер нового массива
     int count = 0;
@@ -24,7 +20,6 @@ int SortingArray(string[] array)
             count++;//присваем еденицу каждый раз когда условия истина
         }
     }
-    
     return count;
 }
 string[] NewArray(int count, string[] array)
@@ -40,10 +35,10 @@ string[] NewArray(int count, string[] array)
     }
     return arr;
 }
-Console.Write("введите  массива ");
+Console.Write("введите размер массива ");
 int n = Convert.ToInt32(Console.ReadLine());
 string[] array = CreateArray(n);
 int number = SortingArray(array);
 string[] newArr = NewArray(number, array);
 for (int i = 0; i < newArr.Length; i++)
-    Console.Write(newArr[i] + " ");
+    Console.Write( "новый массив"+newArr[i] + " ");
